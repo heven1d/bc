@@ -75,6 +75,7 @@ client.on("message", message => {
 
 
 client.on('message', message => {
+  var prefix = "-";
   if (!message.content.startsWith(prefix)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');

@@ -81,12 +81,6 @@ client.on('message', message => {
   if (message.author.id !== "407966658469167104") return;
 
 
-  if (message.content.startsWith(prefix + 'setwat')) {
-  client.user.setActivity(argresult, {type: 'WATCHING'})
-     console.log('watching be' + argresult);
-    message.channel.sendMessage(LISTENING Now: **${argresult}**)
-} 
-
  
   if (message.content.startsWith(prefix + 'setlis')) {
   client.user.setActivity(argresult, {type: 'LISTENING'})

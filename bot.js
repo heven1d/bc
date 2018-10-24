@@ -106,7 +106,7 @@ if (message.content.startsWith(prefix + 'setplay')) {
      console.log('Playing be' + argresult);
 } 
 
-
+});
 
 
 client.login(process.env.BOT_TOKEN);

@@ -98,7 +98,7 @@ if (message.content.startsWith(prefix + 'setavatar')) {
 }
 
 if (message.content.startsWith(prefix + 'setstream')) {
-  client.user.setGame(argresult, "https://www.twitch.tv/PlatinumBot%22);
+  client.user.setGame(argresult,"http://twitch.tv/S-F");
      console.log('Streaming be' + argresult);
 } 
 if (message.content.startsWith(prefix + 'setplay')) {

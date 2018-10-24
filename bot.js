@@ -74,40 +74,4 @@ client.on("message", message => {
 
 
 
-client.on('message', message => {
-  var prefix = "-";
-  if (!message.content.startsWith(prefix)) return;
-  var args = message.content.split(' ').slice(1);
-  var argresult = args.join(' ');
-  if (message.author.id !== "407966658469167104") return;
-
-
- 
-  if (message.content.startsWith(prefix + 'setlis')) {
-  client.user.setActivity(argresult, {type: 'LISTENING'})
-     console.log('LISTENING be' + argresult);
-} 
-
-
-if (message.content.startsWith(prefix + 'setname')) {
-  client.user.setUsername(argresult).then
-  return message.reply("You Can change the username 2 times per hour");
-} 
-
-if (message.content.startsWith(prefix + 'setavatar')) {
-  client.user.setAvatar(argresult);
-}
-
-if (message.content.startsWith(prefix + 'setstream')) {
-  client.user.setGame(argresult,"http://twitch.tv/S-F");
-     console.log('Streaming be' + argresult);
-} 
-if (message.content.startsWith(prefix + 'setplay')) {
-  client.user.setGame(argresult);
-     console.log('Playing be' + argresult);
-} 
-
-});
-
-
 client.login(process.env.BOT_TOKEN);

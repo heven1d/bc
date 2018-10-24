@@ -85,30 +85,25 @@ client.on('message', message => {
   if (message.content.startsWith(prefix + 'setlis')) {
   client.user.setActivity(argresult, {type: 'LISTENING'})
      console.log('LISTENING be' + argresult);
-    message.channel.sendMessage(LISTENING Now: **${argresult}**)
 } 
 
 
 if (message.content.startsWith(prefix + 'setname')) {
   client.user.setUsername(argresult).then
-      message.channel.sendMessage(Username Changed To **${argresult}**)
   return message.reply("You Can change the username 2 times per hour");
 } 
 
 if (message.content.startsWith(prefix + 'setavatar')) {
   client.user.setAvatar(argresult);
-   message.channel.sendMessage(Avatar Changed Successfully To **${argresult}**);
 }
 
 if (message.content.startsWith(prefix + 'setstream')) {
   client.user.setGame(argresult, "https://www.twitch.tv/PlatinumBot%22);
      console.log('Streaming be' + argresult);
-    message.channel.sendMessage(Streaming: **${argresult}**)
 } 
 if (message.content.startsWith(prefix + 'setplay')) {
   client.user.setGame(argresult);
      console.log('Playing be' + argresult);
-    message.channel.sendMessage(Playing: **${argresult}**)
 } 
 
 

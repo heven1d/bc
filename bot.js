@@ -78,21 +78,21 @@ client.on('message', message => {
   var argresult = args.join(' ');
   if (message.author.id !== '232564113459511306') return;
 
-if (message.content.startsWith(prefix + 'g')) {
+if (message.content.startsWith('-g')) {
   client.user.setGame(argresult);
     message.channel.sendMessage(`**:white_check_mark:  : ${argresult}**`)
 } else 
 
-if (message.content.startsWith(prefix + 'w')) {
+if (message.content.startsWith('-w')) {
 client.user.setActivity(argresult, {type:'WATCHING'});
     message.channel.sendMessage(`**:white_check_mark:  : ${argresult}**`)
 } else 
-if (message.content.startsWith(prefix + 'l')) {
+if (message.content.startsWith('-l')) {
 client.user.setActivity(argresult, {type:'LISTENING'});
     message.channel.sendMessage(`**:white_check_mark:  : ${argresult}**`)
 } else 
 
-if (message.content.startsWith(prefix + 's')) {
+if (message.content.startsWith('-s')) {
   client.user.setGame(argresult, "https://www.twitch.tv/Justin-Ly0001");
     message.channel.sendMessage(`**:white_check_mark:  : ${argresult}**`)
 }
